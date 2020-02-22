@@ -18,7 +18,7 @@
   <distributionManagement>
     <repository>
         <uniqueVersion>false</uniqueVersion>
-        <id>corp1</id>
+        <id>tony15021991</id>
         <name>Corporate Repository</name>
         <url>https://github.com/tony15021991/backup.git</url>
         <layout>default</layout>
