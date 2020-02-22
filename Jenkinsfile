@@ -6,25 +6,10 @@ pipeline{
        
 	   steps{
 	withMaven(maven : 'apache-maven-3.6.2'){
-	        sh 'mvn clean compile'
+	        sh 'mvn verify'
 	}
 	}
 	}
-	stage ('Testing stage'){
-       
-	   steps{
-	withMaven(maven : 'apache-maven-3.6.2'){
-	        sh 'mvn test'
-	}
-	}
-	}
-	stage ('Deploymenet stage'){
-       
-	   steps{
-	withMaven(maven : 'apache-maven-3.6.2'){
-	        sh 'mvn Deploy'
-	}
-	}
-	}
-	}
-	}
+ }
+}
+	
