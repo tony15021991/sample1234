@@ -6,7 +6,7 @@ pipeline{
        
 	   steps{
 	withMaven(maven : 'apache-maven-3.6.2'){
-	        sh 'mvn verify'
+	        bat 'mvn verify'
 	}
 	}
 	}
