@@ -21,8 +21,7 @@ pipeline{
 	 stage ('deployment stage'){
        
 	   steps{
-	withMaven(maven : 'apache-maven-3.6.2'){
-	        bat 'mvn deploy'
+	deploy adapters: [tomcat9(path: '', url: '')], contextPath: 'sample123', war: 'C:\\Users\\Toji\\Downloads\\apache-tomcat-9.0.31-windows-x64 (1)\\apache-tomcat-9.0.31\\webapps'
 	}
 	}
 	}
